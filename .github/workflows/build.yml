@@ -29,8 +29,6 @@ jobs:
         echo "RELEASE_TITLE=${RELEASE_TITLE}" >> $GITHUB_ENV
     - name: Change gradlew permissions
       run: chmod +x ./gradlew
-    - name: Change permissions
-      run: chmod +x ./start.sh
     - name: Cache Gradle dependencies
       uses: actions/cache@v4
       with:
